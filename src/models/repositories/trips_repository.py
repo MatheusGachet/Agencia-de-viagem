@@ -37,7 +37,6 @@ class TripsRepository:
         cursor.execute(
             '''UPDATE trips
                      SET status = 1
-
                 WHERE
                     id = ?
                  ''', (trip_id,)
